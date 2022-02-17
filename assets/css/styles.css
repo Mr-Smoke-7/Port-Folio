@@ -860,6 +860,15 @@ body.dark-theme {
   color: var(--text-color-light);
   margin-top: var(--mb-3);
 }
+.footer__made {
+  justify-items: center;
+  display: grid;
+}
+
+.footer__img {
+  width: 29px;
+  margin-top: .7rem;
+}
 
 .footer__title,
 .footer__subtitle,
@@ -887,10 +896,10 @@ body.dark-theme {
 
 .scrollup__icon {
   color: var(--first-color-alt);
-  font-size:3rem;
+  font-size: 3rem;
 }
 .scrollup__icon:hover {
-  color: #6d0000
+  color: #6d0000;
 }
 
 .show-scroll {
@@ -983,7 +992,7 @@ body.dark-theme {
     grid-template-columns: 0.8fr;
     justify-content: center;
   }
- 
+
   .header {
     top: 0;
     bottom: initial;
@@ -1118,7 +1127,7 @@ body.dark-theme {
   }
 
   .project__content {
-    /* padding: 6rem 0 0rem 2.5rem; */
+    padding: 6rem 0 0 2.5rem;
     align-items: center;
   }
   .project__img {
@@ -1153,7 +1162,7 @@ body.dark-theme {
     justify-self: flex-end;
   }
   .footer__copy {
-    margin-top: 4.5rem;
+    margin-top: 2.5rem;
   }
 }
 
