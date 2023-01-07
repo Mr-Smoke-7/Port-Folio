@@ -161,3 +161,39 @@ themeButton.addEventListener('click', () => {
   localStorage.setItem('selected-theme', getCurrentTheme());
   localStorage.setItem('selected-icon', getCurrentIcon());
 });
+
+
+/*==================== form data to fairebase ====================*/
+
+const form = document.getElementById('contact-form');
+
+form.addEventListener('submit', function (event) {
+  event.preventDefault();
+
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+  const contact = document.getElementById('contact').value;
+  const message = document.getElementById('message').value;
+
+  const data = {
+    name: name,
+    email: email,
+    contact: contact,
+    message: message
+  };
+
+  const options = {
+    method: 'POST',
+    body: JSON.stringify(data),
+    headers: {
+      'Content-Type': 'application/json'
+    }
+  };
+
+  const databaseURL = 'https://react-movie-app-7b37a-default-rtdb.asia-southeast1.firebasedatabase.app/messages.json';
+
+  fetch(databaseURL, options)
+    .then(response => response.json())
+    .then(result => console.log(result))
+    .catch(error => console.error(error));
+});
