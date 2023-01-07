@@ -107,10 +107,13 @@ a {
 
 button {
   font-family: var(--body-font);
+  font-size: var(--small-font-size);
   border: none;
 }
 
 button:focus {
+  font-family: var(--body-font);
+  font-size: var(--small-font-size);
   border: none;
   outline: none;
 }
