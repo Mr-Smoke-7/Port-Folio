@@ -190,7 +190,7 @@ form.addEventListener('submit', function (event) {
     }
   };
 
-  const databaseURL = 'https://react-movie-app-7b37a-default-rtdb.asia-southeast1.firebasedatabase.app/messages.json';
+  const databaseURL = 'https://food-order-app-9b789-default-rtdb.asia-southeast1.firebasedatabase.app/messages.json';
 
   fetch(databaseURL, options)
     .then(response => response.json())
