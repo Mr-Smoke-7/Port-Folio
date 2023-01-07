@@ -190,10 +190,14 @@ form.addEventListener('submit', function (event) {
     }
   };
 
+
   const databaseURL = 'https://food-order-app-9b789-default-rtdb.asia-southeast1.firebasedatabase.app/messages.json';
 
   fetch(databaseURL, options)
     .then(response => response.json())
     .then(result => console.log(result))
     .catch(error => console.error(error));
+
+  alert("Message send successfully!")
+  form.reset();
 });
