@@ -172,7 +172,7 @@ form.addEventListener('submit', function (event) {
 
   const name = document.getElementById('name').value;
   const email = document.getElementById('email').value;
-  const contact = document.getElementById('contact').value;
+  const contact = document.getElementById('contact-num').value;
   const message = document.getElementById('message').value;
 
   const data = {
@@ -191,7 +191,7 @@ form.addEventListener('submit', function (event) {
   };
 
 
-  const databaseURL = 'https://food-order-app-9b789-default-rtdb.asia-southeast1.firebasedatabase.app/messages.json';
+  const databaseURL = 'https://react-movie-app-7b37a-default-rtdb.asia-southeast1.firebasedatabase.app/messages.json';
 
   fetch(databaseURL, options)
     .then(response => response.json())
