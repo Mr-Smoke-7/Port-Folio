@@ -195,7 +195,6 @@ form.addEventListener('submit', function (event) {
 
   fetch(databaseURL, options)
     .then(response => response.json())
-    .then(result => console.log(result))
     .catch(error => console.error(error));
 
   alert("Message send successfully!")
